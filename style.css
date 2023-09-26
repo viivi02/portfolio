@@ -1,46 +1,129 @@
-body {
-    background-color: lightblue;
+* {
     margin: 0px;
-  }
-nav{
-    background-color: aqua;
-    text-align: center;
+    padding: 0px;
+}
+
+/* Estilos para a barra de navegação */
+ul.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.9;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+}
+
+li.nav-item {
+    float: left;
+    font-family: 'Franklin Gothic Medium';
+    padding-right: 15px;
+}
+.icon{
+    display: flex;
+}
+
+li.nav-item a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Estilo para os links quando passar o mouse */
+li.nav-item a:hover {
+    color: black;
+}
+
+body {
+    background-color: grey;
+}
+
+h2 {
+    color: #fff;
+    font-size: 40px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: justify;
+    text-shadow: 1px -1px 0 #212121,
+        2px -2px 0 #1e1e20,
+        3px -3px 0 #252628;
+}
+
+p {
+    color: #fff;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: justify;
+}
+
+.navbar {
+    background-color: black;
     width: 100vw;
     height: 8vh;
 }
-.inicial{
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    padding-right: 80px;
+    padding-left: 1100px;
+}
+
+.menu li {
+    justify-content: flex-end;
+    display: flex;
+}
+
+.inicial {
     width: 100vw;
     height: 100vh;
-    background-color: azure;
+    background-color: blueviolet;
     align-items: top;
     display: flex;
     justify-content: flex-end;
-    
+    background-image: url('https://i.pinimg.com/originals/59/b2/34/59b2349684d902730f710b65f05ecb80.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-.descricao{
-    background-color: bisque;
-    align-items: center;
-    width: 50vw;
-    height: 100vh;
-    justify-content: center;
+
+.descricao {
+    align-items: stretch;
+    width: 100vw;
+    height: 52vh;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-}
-.imginicial{
-    background-color: brown;
-    align-items: center;
-    width: 50vw;
-    height: 50vh;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+    background-color: black;
+    opacity: 0.9;
     align-self: center;
 }
-.mais{
+
+.texto {
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.imginicial {
+    align-items: right;
+    width: 25vw;
+    height: 52vh;
+    display: flex;
+    border-color: rgb(171, 13, 13);
+    border-radius: 50%;
+    flex-direction: row;
+    background-image: url('https://media.licdn.com/dms/image/C4D03AQFX65GaT8febQ/profile-displayphoto-shrink_800_800/0/1659723643916?e=1701302400&v=beta&t=OB5ZVA2kkVfzNf_5a93WLarCPRVJ8A0L9-Vy8v9W9n0');
+    background-repeat: no-repeat;
+    background-position: 10%;
+    background-size: cover;
+}
+
+.mais {
     background-color: rgb(139, 139, 218);
     align-items: center;
     display: flex;
@@ -48,7 +131,8 @@ nav{
     height: 46vw;
     flex-direction: row;
 }
-.rodape{
+
+.rodape {
     background-color: aquamarine;
     justify-content: center;
     display: flex;
