@@ -3,52 +3,46 @@
     padding: 0px;
 }
 
-/* Estilos para a barra de navegação */
-ul.navbar {
+.navbar {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: black;
     overflow: hidden;
-    opacity: 0.9;
-    display: flex;
-    justify-content: flex-end;
+    opacity: 0.7;
+    border: 1px solid #bbb;
+    background-color: black;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
-li.nav-item {
+li {
     float: left;
-    font-family: 'Franklin Gothic Medium';
-    padding-right: 15px;
-}
-.icon{
-    display: flex;
 }
 
-li.nav-item a {
+li:last-child {
+    border-right: none;
+}
+
+li a {
     display: block;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-/* Estilo para os links quando passar o mouse */
-li.nav-item a:hover {
-    color: black;
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #101110;
 }
 
 body {
-    background-color: grey;
-}
-
-h2 {
-    color: #fff;
-    font-size: 40px;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-align: justify;
-    text-shadow: 1px -1px 0 #212121,
-        2px -2px 0 #1e1e20,
-        3px -3px 0 #252628;
+  background-color:#09062c;
 }
 
 p {
@@ -59,47 +53,153 @@ p {
     text-align: justify;
 }
 
-.navbar {
-    background-color: black;
-    width: 100vw;
-    height: 8vh;
-}
-
-.menu {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    padding-right: 80px;
-    padding-left: 1100px;
-}
-
-.menu li {
-    justify-content: flex-end;
-    display: flex;
-}
-
 .inicial {
     width: 100vw;
     height: 100vh;
-    background-color: blueviolet;
-    align-items: top;
-    display: flex;
-    justify-content: flex-end;
-    background-image: url('https://i.pinimg.com/originals/59/b2/34/59b2349684d902730f710b65f05ecb80.gif');
-    background-repeat: no-repeat;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0, #09062c, #000000);
     background-size: 100%;
 }
 
+.stars{
+    position: relative;
+	width: 6px;
+	height: 6px;
+	border-radius: 50%;
+	box-shadow: 100px 100px white,
+    200px 200px white,
+    300px 300px white,
+    400px 400px white,
+    500px 500px white,
+    600px 600px white,
+    700px 700px white,
+    800px 800px white,
+    900px 900px white,
+    100px 400px white,
+    200px 300px white,
+    300px 200px white,
+    400px 100px white,
+    500px 600px white,
+    600px 500px white,
+    700px 400px white,
+    800px 300px white,
+    900px 200px white,
+    1000px 100px white,
+    100px 700px white,
+    200px 600px white,
+    300px 500px white,
+    400px 400px white,
+    500px 300px white,
+    600px 200px white,
+    700px 100px white,
+    800px 700px white,
+    900px 600px white,
+    1000px 500px white,
+    1100px 400px white,
+    1200px 300px white,
+    1300px 200px white,
+    1400px 100px white,
+    1500px 700px white,
+    1600px 600px white,
+    1700px 500px white,
+    1800px 400px white,
+    1900px 300px white,
+    2000px 200px white,
+    100px 100px white,
+    200px 200px white,
+    300px 300px white,
+    400px 400px white,
+    500px 500px white,
+    600px 600px white,
+    700px 700px white,
+    800px 800px white,
+    900px 900px white,
+    1000px 1000px white,
+    1100px 1100px white,
+    1200px 1200px white,
+    1300px 1300px white,
+    1400px 1400px white,
+    1500px 1500px white,
+    1600px 1600px white,
+    1700px 1700px white,
+    1800px 1800px white,
+    1900px 1900px white,
+    2000px 2000px white;
+    animation: anim-stars 10s linear infinite;
+}
+.stars::after{
+    content: " ";
+    position: absolute;
+    top: 334px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    box-shadow: 50px 30px white,
+      100px 80px white,
+      80px 120px white,
+      300px 20px white,
+      250px 130px white,
+      200px 50px white,
+      150px 100px white,
+      320px 100px white;
+  }
+  .stars2{
+    position: relative;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+    animation: anim-stars 20s linear infinite;
+  }
+  
+  .stars2::after{
+    content: " ";
+    position: absolute;
+    top: 150px;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    box-shadow: 15px 15px white,
+      125px 35px white,
+      50px 80px white,
+      10px 120px white,
+      275px 90px white,
+      230px 10px white,
+      120px 130px white,
+      300px 130px white,
+      220px 115px white;
+  }
+@keyframes anim-stars {
+    from {
+        transform: translateY(0px);
+    }
+    to {
+        transform: translateY(-150px);
+    }
+}
 .descricao {
-    align-items: stretch;
+    position: absolute;
+    align-items: center;
     width: 100vw;
-    height: 52vh;
+    height: 99vh;
+    margin-left: 0%;
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     background-color: black;
     opacity: 0.9;
     align-self: center;
+    z-index: 0;
 }
 
 .texto {
@@ -114,12 +214,10 @@ p {
     width: 25vw;
     height: 52vh;
     display: flex;
-    border-color: rgb(171, 13, 13);
     border-radius: 50%;
     flex-direction: row;
     background-image: url('https://media.licdn.com/dms/image/C4D03AQFX65GaT8febQ/profile-displayphoto-shrink_800_800/0/1659723643916?e=1701302400&v=beta&t=OB5ZVA2kkVfzNf_5a93WLarCPRVJ8A0L9-Vy8v9W9n0');
     background-repeat: no-repeat;
-    background-position: 10%;
     background-size: cover;
 }
 
@@ -129,15 +227,31 @@ p {
     display: flex;
     justify-content: center;
     height: 46vw;
-    flex-direction: row;
+    width: 100vw;
+    opacity: 0.7;
+    flex-direction: column;
+    background: linear-gradient(0, #09062c, #04021c);
 }
-
+.lista{
+    justify-content: space-between;
+    align-items: center;
+}
+.skill{
+    text-align: center;
+    list-style-type: none;
+    text-decoration-color: aliceblue;
+    justify-content: space-evenly;
+}
+.divmais{
+    flex-direction: column;
+}
 .rodape {
-    background-color: aquamarine;
-    justify-content: center;
+    justify-content: space-evenly;
     display: flex;
     flex-direction: row;
+    align-items: center;
     height: 5vh;
     width: 100vw;
-
+    background: linear-gradient(0, #080336, #1d1760);
+    border: 1px linear-gradient(0, #201d47, #1d1760);
 }
