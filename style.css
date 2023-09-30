@@ -246,7 +246,7 @@ p {
     flex-direction: column;
 }
 .rodape {
-    justify-content: space-evenly;
+    justify-content: space-around;
     display: flex;
     flex-direction: row;
     align-items: center;

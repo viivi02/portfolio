@@ -12,6 +12,7 @@ ul {
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 1;
 }
 
 li {
@@ -42,6 +43,7 @@ li a:hover {
     height: 100vh;
     background: linear-gradient(0, #120c56, #000000);
     z-index: 0;
+    position: fixed;
   }
 .stars{
     position: relative;
@@ -130,6 +132,22 @@ li a:hover {
 .about{
     width: 100vw;
     height: 100vh;
-    background-color: #000000;
     z-index: 1;
+    display: flex;  
+    font-size: larger;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: justify;
+}
+.about h1,h2{
+    margin-top: 20px;
+    margin: 1%;
+    font-size: 285%;
+    font-family:serif;
+    font
+}
+.about p{
+    font-family: monospace;
+    margin: 2%;
+    font-size:larger;
 }
