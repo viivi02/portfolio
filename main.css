@@ -41,6 +41,7 @@ li a:hover {
     width: 100vw;
     height: 100vh;
     background: linear-gradient(0, #120c56, #000000);
+    z-index: 0;
   }
 .stars{
     position: relative;
@@ -125,4 +126,10 @@ li a:hover {
     to {
         transform: translateY(-150px);
     }
+}
+.about{
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    z-index: 1;
 }
