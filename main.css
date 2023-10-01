@@ -13,6 +13,7 @@ ul {
     top: 0;
     width: 100%;
     z-index: 1;
+    opacity: 0.7;
 }
 
 li {
@@ -35,7 +36,7 @@ li a:hover {
 }
 
 .active {
-    background-color: #101110;
+    background-color: #333232;
 }
 
 .container{
@@ -132,22 +133,25 @@ li a:hover {
 .about{
     width: 100vw;
     height: 100vh;
-    z-index: 1;
     display: flex;  
     font-size: larger;
-    justify-content: space-evenly;
     flex-direction: column;
     text-align: justify;
+    justify-content: space-evenly;
 }
 .about h1,h2{
     margin-top: 20px;
     margin: 1%;
     font-size: 285%;
     font-family:serif;
-    font
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em
 }
 .about p{
     font-family: monospace;
     margin: 2%;
     font-size:larger;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    align-self: stretch;
 }

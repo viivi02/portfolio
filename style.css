@@ -38,7 +38,7 @@ li a:hover {
 }
 
 .active {
-    background-color: #101110;
+    background-color: #333232;
 }
 
 body {
@@ -203,12 +203,18 @@ p {
 }
 
 .texto {
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
 }
-
+.texto h1,p{
+    color: white;
+    text-shadow: rgb(21, 18, 170) 0.1em 0.1em 0.2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.texto h1{
+    font-size: 680% ;
+}
 .imginicial {
     align-items: right;
     width: 25vw;
